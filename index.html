@@ -1,6 +1,114 @@
 <!DOCTYPE HTML>
 
 <html>
-  <head></head>
-  <body>test!!</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+        
+        <title>Block Bomber（ブロックボンバー）| あさづけラボ</title>
+        
+        <link rel="icon" href="favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+        
+        <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# website: http://ogp.me/ns/ website#">
+        <meta property="og:url" content="https://app.azm-it.com/games/block" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Block Bomber（ブロックボンバー）| あさづけラボ" />
+        <meta property="og:description" content="タッチでブロックをたくさん壊す！30秒で手軽に遊べる無料ブラウザゲームです。" />
+        <meta property="og:site_name" content="Block Bomber（ブロックボンバー）| あさづけラボ" /> 
+        <meta property="og:image" content="https://app.azm-it.com/games/block/ogp.png"/>
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@AsazukeMochi" />
+        
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        
+        <script src="https://cdn.jsdelivr.net/gh/phi-jp/phina.js@0.2.3/build/phina.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/Credit.js"></script>
+        <script src="js/LoadingScene.js"></script>
+        <script src="js/MainScene.js"></script>
+        <script src="js/TitleController.js"></script>
+        <script src="js/GameController.js"></script>
+        <script src="js/ResultController.js"></script>
+        <script src="js/PixelSprite.js"></script>
+        <script src="js/CommonLabel.js"></script>
+        <script src="js/social.js"></script>
+        <script src="js/cookie.js"></script>
+        <script src="js/ga.js"></script>
+
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JF96SPYP9T"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-JF96SPYP9T');
+        </script>
+        
+        <style>
+            body {
+                margin: 0;
+                background-color: #222;
+            }
+            
+            canvas {
+                margin: auto;
+                display: block;
+            }
+            
+            #banner {
+                /*width: 300px;*/
+                height: 60px;
+                background-color:floralwhite;
+                
+            }
+            
+            /*ウィンドウ幅が最大479pxまでの場合に適用*/
+            @media screen and (max-width: 479px) { 
+                canvas {
+                    width: 100%
+                }
+            }
+            
+            @media screen and (min-width: 479px) {
+                canvas {
+                    padding: 20px;
+                    width: 400px;
+                }
+            }
+
+            header {
+                width: 100%;
+                height : 50px;
+                background-color: steelblue;
+                text-align: center;
+                padding: 5px 0px;
+            }
+
+            header img {
+                height: 100%;
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <!-- <a href="../portal/">
+            <header>
+                <img src="./title.png">
+            </header>
+        </a> -->
+
+        <!--バナー広告-->
+        <!-- <script type="text/javascript">
+        var nend_params = {"media":70769,"site":358663,"spot":1063377,"type":1,"oriented":1};
+        </script>
+        <script type="text/javascript" src="https://js1.nend.net/js/nendAdLoader.js"></script> -->
+        
+        <canvas id="canvas"></canvas>
+    </body>
 </html>
